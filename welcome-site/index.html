@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome</title>
+  <meta name="description" content="A simple static welcome website.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Welcome</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Welcome</h1>
+        <p>We are glad you are here. Take a look around and get in touch whenever you like.</p>
+        <button type="button" id="cta-button" class="cta">Contact us</button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>This is a simple static website built with plain HTML, CSS and JavaScript. It has no external libraries or frameworks and works by opening the page in any modern browser.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt" tabindex="-1">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Phone: <a href="tel:+15550100100">+1 555 010 0100</a></p>
+        <p class="note">These contact details are placeholders.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Welcome. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
