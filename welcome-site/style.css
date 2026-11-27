@@ -1,0 +1,191 @@
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1a1a2e;
+  background: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: #0b4fb3;
+}
+
+/* Focus indicators */
+a:focus-visible,
+button:focus-visible,
+[tabindex="-1"]:focus-visible {
+  outline: 3px solid #0b4fb3;
+  outline-offset: 3px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #1a1a2e;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* Header and navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1f2a44;
+  color: #ffffff;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-header a:focus-visible {
+  outline-color: #ffd166;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 0.5rem 0.25rem;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+.hero {
+  padding: 4rem 0;
+  background: #eef3fb;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 36rem;
+  margin: 0 auto 1.5rem;
+}
+
+.cta {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 4px;
+  background: #0b4fb3;
+  color: #ffffff;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #093d8c;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: #f4f4f6;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.note {
+  color: #4a4a5a;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 0;
+  background: #1f2a44;
+  color: #ffffff;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
